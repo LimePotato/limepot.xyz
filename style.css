@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martian', monospace;
+}
+body
+{
+    background:#2b272b;
+}
+.navigation
+{
+    position: fixed;
+    inset: 20px 0 20px 20px;
+    width: 105px;
+    background: #332e33;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation.open
+{
+    width: 250px;
+}
+.navigation .menuToggle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 23px;
+}
+.navigation .menuToggle::before
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #413b41;
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+.navigation.open .menuToggle::before
+{
+    transform: translateY(0px) rotate(45deg);
+}
+.navigation .menuToggle::after
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #413b41;
+    transform: translateY(8px);
+    transition: 0.5s;
+    box-shadow: 0 -8px 0 #413b41;
+}
+.navigation.open .menuToggle::after
+{
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0 0 #413b41;
+}
