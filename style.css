@@ -157,3 +157,8 @@ body
 {
     color: var(--clr);
 }
+.content
+{
+    color: rgb(173, 173, 173);
+    text-align: center;
+}
