@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Marvin Visions Variable';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/MarvinVisionsTrial-Variable.ttf");
+}
+
+:root {
+	--black: #010101;	
+	--red: #fd0002;
+	--blue: #1600fe;
+	--green: #00ff00;
+	--letter-skew: 8deg;
+}
+
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: var(--black);
+}
+
+.words {
+	font-size: 7.5rem;
+	letter-spacing: 1rem;
+	font-family: 'Marvin Visions Variable';	
+	text-transform: uppercase;
+	
+	&:nth-child(odd) {
+		.char {	
+			&:nth-child(odd) {
+				--rotation: 10deg;
+				transform-origin: bottom left;
+				animation-name: stretchHozThenVert;
+			}
+			
+			&:nth-child(even) {
+				--rotation: -10deg;
+				transform-origin: bottom left;
+				animation-name: stretchVertThenHoz;
+				
+				&:before,
+				&:after {
+					animation-name: stretchVertThenHoz;
+				}
+			}
+		}
+	}
+	
+	&:nth-child(even) {
+		.char {			
+			&:nth-child(odd) {
+			--rotation: -10deg;
+				transform-origin: top right;
+				animation-name: stretchVertThenHoz;
+			}
+			
+			&:nth-child(even) {
+				--rotation: 10deg;
+				transform-origin: top left;
+				animation-name: stretchHozThenVert;
+				
+				&:before,
+				&:after {
+					animation-name: stretchHozThenVert;
+				}
+			}
+		}
+	}
+}
+
+.char {
+	position: relative;
+	display: inline-block;
+	color: var(--blue);
+	mix-blend-mode: screen;
+	font-variation-settings: 'wght' 200;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-easing: ease-in-out;	
+	
+	&::after, 
+	&::before {
+		content: attr(data-char);
+		position: absolute;
+		mix-blend-mode: screen;
+		left: 0;
+		animation-duration: 1.3s;
+		animation-iteration-count: infinite;
+		animation-name: stretchHozThenVert;
+		animation-easing: ease-in-out;
+	}
+	
+	&::before {
+		color: var(--red);
+		font-variation-settings: 'wght' 170;
+		animation-delay: 0.25s;
+		font-size: 7.75rem;
+	}
+
+	&::after {
+		color: var(--green);
+		font-variation-settings: 'wght' 150;		
+		animation-delay: 0.5s;
+		font-size: 8rem;
+	}
+}
+
+@keyframes stretchHozThenVert {
+	0% {
+	 transform: rotate(var(--rotation)) skew(var(--letter-skew), 0) scale(0.9, 1.15)
+	}
+	50% {
+		transform: rotate(var(--rotation)) skew(var(--letter-skew), 0) scale(1.15, 0.9)
+	}
+	100% {
+		transform: rotate(var(--rotation)) skew(var(--letter-skew), 0) scale(0.9, 1.15)
+	}
+}
+
+@keyframes stretchVertThenHoz {
+	0% {
+	 transform: rotate(var(--rotation)) scale(1.15, 0.9)
+	}
+	50% {
+		transform: rotate(var(--rotation)) scale(0.9, 1.15)
+	}
+	100% {
+		transform: rotate(var(--rotation)) scale(1.15, 0.9)
+	}
+}

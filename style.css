@@ -82,7 +82,7 @@ body{
     padding: 0 23px;
 }
 .navigation.mTitle .menuToggle::after{
-    content:'Limepot';
+    content:'LimePotato';
 }
 .navigation.open .menuToggle::after{
     transform: translateY(0px) rotate(-45deg);
