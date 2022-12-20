@@ -9,6 +9,79 @@
         <link rel = "icon" href = "assets/obo-icon.png" 
         type = "image/x-icon">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{list-style: none;}
+        body{
+            /*to center the items*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-weight: bold;
+        }
+        .wrapper{
+            font-size: 4vw;
+            width: 50vw;
+            text-align: center;
+            display: flex;
+            
+        }
+        .normal-text{
+            color: white;
+            width: 35%;
+            display: inline-block;
+            text-align: left;
+        }
+        .dynamic-text {
+            display: inline-block;
+            height: 4vw;
+            overflow: hidden;
+        }
+        .dynamic-text li{
+            color: rgb(0, 255, 204);
+            margin: 0 0 2% 5px;
+            position: relative;
+            width: fit-content;
+            animation: slid 18s steps(3) infinite;
+            -webkit-animation: slid 18s steps(3) infinite;
+        }
+        .dynamic-text li::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-left: 2px solid rgb(0, 255, 204);
+            left: 0;
+            background: #332e33;
+            animation: typing 3s steps(12) infinite;
+            -webkit-animation: typing 3s steps(12) infinite;
+        }
+        @keyframes typing {
+            50%{left:100%}
+            100%{left:0%}
+        }
+        @keyframes slid {
+           
+             50%{
+                 transform: translateY(calc(-15.5vw));
+                 -webkit-transform: translateY(calc(-15.5vw));
+                 -moz-transform: translateY(calc(-15.5vw));
+                 -ms-transform: translateY(calc(-15.5vw));
+                 -o-transform: translateY(calc(-15.5vw));
+        }
+             100%{ transform: translateY(0px);
+                 -webkit-transform: translateY(0px);
+                  -moz-transform: translateY(0px); 
+                  -ms-transform: translateY(0px); 
+                  -o-transform: translateY(0px);}
+        }
+            </style>
 </head>
 <body>
     <div class="navigation">
@@ -57,9 +130,16 @@
         </li>
         </ul>
     </div>
-    <div id="app"></div>
-
-
+    <div class="wrapper">
+        <div class="normal-text"> I'm a :</div> 
+        <ul class="dynamic-text">
+            <li>Developer.</li>
+            <li>Crazy Lady.</li>
+            <li>Photographer.</li>
+            <li>Videographer.</li>
+            
+        </ul>
+    </div>
 
     <script>
         const menuToggle = document.querySelector('.menuToggle');
