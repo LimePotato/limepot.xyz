@@ -19,6 +19,28 @@ a:visited{
 body{
     background:#332e33;
 }
+
+/* Dark mode styles */
+.darkmode {
+    background-color: #332e33;
+    color: #fff;
+  }
+  
+  .darkmode a {
+    color: #00bfff;
+  }
+  
+  /* Light mode styles */
+  .lightmode {
+    background-color: #fff;
+    color: #222;
+  }
+  
+  .lightmode a {
+    color: #00bfff;
+  }
+  
+
 .navigation{
     position: fixed;
     inset: 20px 0 20px 20px;

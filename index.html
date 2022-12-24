@@ -70,6 +70,7 @@
         </ul>
     </div>
     <div class="content">
+        <button id="toggle-dark-light-mode">Toggle Dark/Light Mode</button>
         <br><br><br>
         <a href="#">0 Days since last incident.</a>
         <br><br>
@@ -85,7 +86,14 @@
         <p>- Emily Dickinson</p>
         <br><br><br>
         </div>
-    
+        
+        <script>
+            const toggleButton = document.getElementById('toggle-dark-light-mode');
+            toggleButton.addEventListener('click', () => {
+              document.body.classList.toggle('darkmode');
+              document.body.classList.toggle('lightmode');
+            });
+          </script>
     <script>
         const menuToggle = document.querySelector('.menuToggle');
         const navigation = document.querySelector('.navigation');
