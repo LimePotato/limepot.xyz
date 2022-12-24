@@ -4,27 +4,43 @@ body {
   padding: 0;
 }
 
-/* Dark mode styles */
-.darkmode {
+header {
   background-color: #333;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.darkmode a {
-  color: #00bfff;
+header h1 {
+  margin: 0;
 }
 
-/* Light mode styles */
-.lightmode {
-  background-color: #fff;
-  color: #222;
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.lightmode a {
-  color: #00bfff;
+header nav li {
+  margin-left: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
+  background-color: #333;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
