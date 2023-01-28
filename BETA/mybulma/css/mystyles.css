@@ -166,7 +166,7 @@ th {
     text-align: inherit; }
 
 html {
-  background-color: #181618;
+  background-color: #181516;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -244,7 +244,7 @@ span {
   font-weight: inherit; }
 
 strong {
-  color: #eaeaea;
+  color: #F5A9B8;
   font-weight: 700; }
 
 fieldset {
@@ -273,7 +273,7 @@ table th {
     text-align: inherit; }
 
 table th {
-  color: #eaeaea; }
+  color: #F5A9B8; }
 
 @keyframes spinAround {
   from {
@@ -285,7 +285,7 @@ table th {
   background-color: white;
   border-color: #dbdbdb;
   border-width: 2px;
-  color: #eaeaea;
+  color: #F5A9B8;
   cursor: pointer;
   justify-content: center;
   padding-bottom: calc(0.5em - 2px);
@@ -326,10 +326,10 @@ table th {
     text-decoration: underline; }
     .button.is-text:hover, .button.is-text.is-hovered, .button.is-text:focus, .button.is-text.is-focused {
       background-color: whitesmoke;
-      color: #eaeaea; }
+      color: #F5A9B8; }
     .button.is-text:active, .button.is-text.is-active {
       background-color: #e8e8e8;
-      color: #eaeaea; }
+      color: #F5A9B8; }
     .button.is-text[disabled],
     fieldset[disabled] .button.is-text {
       background-color: transparent;
@@ -1262,7 +1262,7 @@ table th {
   font-weight: 400;
   line-height: 1.25; }
   .subtitle strong {
-    color: #eaeaea;
+    color: #F5A9B8;
     font-weight: 600; }
   .subtitle:not(.is-spaced) + .title {
     margin-top: -1.25rem; }
@@ -1428,7 +1428,7 @@ table th {
   .checkbox input, .radio input {
     cursor: pointer; }
   .checkbox:hover, .radio:hover {
-    color: #eaeaea; }
+    color: #F5A9B8; }
   .checkbox[disabled], .radio[disabled],
   fieldset[disabled] .checkbox,
   fieldset[disabled] .radio,
@@ -1473,7 +1473,7 @@ table th {
       .select select[multiple] option {
         padding: 0.5em 1em; }
   .select:not(.is-multiple):not(.is-loading):hover::after {
-    border-color: #eaeaea; }
+    border-color: #F5A9B8; }
   .select.is-white:not(:hover)::after {
     border-color: white; }
   .select.is-white select {
@@ -1817,12 +1817,12 @@ table th {
   position: relative; }
   .file-label:hover .file-cta {
     background-color: #eeeeee;
-    color: #eaeaea; }
+    color: #F5A9B8; }
   .file-label:hover .file-name {
     border-color: #d5d5d5; }
   .file-label:active .file-cta {
     background-color: #e8e8e8;
-    color: #eaeaea; }
+    color: #F5A9B8; }
   .file-label:active .file-name {
     border-color: #cfcfcf; }
 
@@ -1869,7 +1869,7 @@ table th {
     font-size: 14px; }
 
 .label {
-  color: #eaeaea;
+  color: #F5A9B8;
   display: block;
   font-size: 1rem;
   font-weight: 700; }
@@ -2091,7 +2091,7 @@ table th {
     font-size: 1.5rem; }
 
 .navbar {
-  background-color: #00fdbe;
+  background-color: #181516;
   min-height: 3.25rem;
   position: relative;
   z-index: 30; }
@@ -2714,7 +2714,7 @@ a.navbar-item,
   .navbar-link::after {
     display: none; }
   .navbar-menu {
-    background-color: #00fdbe;
+    background-color: #181516;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0; }
     .navbar-menu.is-active {
