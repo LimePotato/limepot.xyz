@@ -2589,7 +2589,7 @@ body.has-navbar-fixed-bottom {
   overflow-y: hidden; }
 
 .navbar-burger {
-  color: #a45e8d;
+  color: #111111;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -2632,7 +2632,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #a45e8d;
+  color: #111111;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
