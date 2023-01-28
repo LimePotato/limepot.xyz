@@ -2769,7 +2769,7 @@ a.navbar-item,
       background-color: whitesmoke;
       color: #0a0a0a; }
     .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
-      background-color: #070707;
+      background-color: whitesmoke;
       color: #F5A9B8; }
   .navbar-burger {
     display: none; }
@@ -2825,7 +2825,7 @@ a.navbar-item,
         background-color: whitesmoke;
         color: #0a0a0a; }
       .navbar-dropdown a.navbar-item.is-active {
-        background-color: #070707;
+        background-color: whitesmoke;
         color: #F5A9B8; }
     .navbar.is-spaced .navbar-dropdown, .navbar-dropdown.is-boxed {
       border-radius: 6px;
