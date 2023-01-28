@@ -6,18 +6,19 @@
 // Set your brand colors
 $lime:#00fdbe;
 $purple: #a45e8d;
-$pink: #F5A9B8;
+$trans-pink: #F5A9B8;
 $beige-light: #eaeaea;
 $off-dark: #181516;
 $off-off-dark: #070707;
 $off-off-off-dark: #111111;
+$trans-blue: #5bcefa;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $purple;
 $grey-light: $beige-light;
 $primary: $lime;
-$link: $pink;
+$link: $trans-pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -30,16 +31,18 @@ $input-shadow: none;
 
 //my shit
 $title-color: $lime;
-$input-color: $link;
+$input-color: $trans-pink;
 $primary: $lime;
-$text-strong: $pink;
+$text-strong: $trans-pink;
+/////navbar
 $navbar-background-color: $off-off-dark;
 $navbar-item-color: $grey-dark;
-$navbar-dropdown-background-color: $off-off-off-dark;
-$navbar-dropdown-item-hover-color: $off-off-off-dark;
-$navbar-dropdown-item-hover-background-color: $off-off-off-dark;
-$navbar-dropdown-item-active-color: $off-off-off-dark;
-$navbar-dropdown-item-active-background-color: $off-off-off-dark;
+$navbar-item-hover-background-color: $off-off-dark;
+//$navbar-dropdown-background-color: $off-off-off-dark;
+//$navbar-dropdown-item-hover-color: $off-off-off-dark;
+//$navbar-dropdown-item-hover-background-color: $off-off-off-dark;
+//$navbar-dropdown-item-active-color: $off-off-off-dark;
+//$navbar-dropdown-item-active-background-color: $off-off-off-dark;
 
 
 // Import only what you need from Bulma
