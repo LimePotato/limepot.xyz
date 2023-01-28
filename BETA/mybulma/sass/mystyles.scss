@@ -12,6 +12,7 @@ $off-dark: #181516;
 $off-off-dark: #070707;
 $off-off-off-dark: #111111;
 $trans-blue: #5bcefa;
+$greyish: #1d1d1d;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
@@ -23,7 +24,7 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $off-dark;
+$body-background-color: $greyish;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
@@ -38,9 +39,10 @@ $text-strong: $trans-pink;
 $navbar-background-color: $off-dark;
 $navbar-item-color: $trans-pink;
 $navbar-item-hover-background-color: $off-off-dark;
-//$navbar-dropdown-background-color: $off-off-off-dark;
-//$navbar-dropdown-item-hover-color: $off-off-off-dark;
-//$navbar-dropdown-item-hover-background-color: $off-off-dark;
+$navbar-dropdown-background-color: $off-off-off-dark;
+$navbar-dropdown-item-hover-color: $trans-blue;
+$navbar-dropdown-item-hover-background-color: $off-dark;
+$navbar-divider-background-color: $greyish;
 //$navbar-dropdown-item-active-color: $off-off-off-dark;
 //$navbar-dropdown-item-active-background-color: $off-off-dark;
 
