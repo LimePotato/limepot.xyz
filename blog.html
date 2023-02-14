@@ -4,74 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "icon" href = "assets/branding/obo-icon.png">
-    <title>LimePot - About</title>
+    <title>LimePot - Blog</title>
     <link rel="stylesheet" href="mybulma/css/mystyles.css">
-
-
-    <style>
-        *{
-            box-sizing: border-box;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-        }
-        .wrapper{
-            font-size: 4vw;
-            width: 50vw;
-            text-align: center;
-            display: flex;
-            
-        }
-        .normal-text{
-            color: white;
-            width: 35%;
-            display: inline-block;
-            text-align: left;
-        }
-        .dynamic-text {
-            display: inline-block;
-            height: 5vw;
-            overflow: hidden;
-        }
-        .dynamic-text li{
-            color: rgb(0, 255, 204);
-            margin: 0 0 2% 5px;
-            position: relative;
-            width: fit-content;
-            animation: slid 18s steps(3) infinite;
-            -webkit-animation: slid 18s steps(3) infinite;
-        }
-        .dynamic-text li::before{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-left: 2px solid rgb(0, 255, 204);
-            left: 0;
-            background: #332e33;
-            animation: typing 3s steps(12) infinite;
-            -webkit-animation: typing 3s steps(12) infinite;
-        }
-        @keyframes typing {
-            50%{left:100%}
-            100%{left:0%}
-        }
-        @keyframes slid {
-           
-             50%{
-                 transform: translateY(calc(-15.5vw));
-                 -webkit-transform: translateY(calc(-15.5vw));
-                 -moz-transform: translateY(calc(-15.5vw));
-                 -ms-transform: translateY(calc(-15.5vw));
-                 -o-transform: translateY(calc(-15.5vw));
-        }
-             100%{ transform: translateY(0px);
-                 -webkit-transform: translateY(0px);
-                  -moz-transform: translateY(0px); 
-                  -ms-transform: translateY(0px); 
-                  -o-transform: translateY(0px);}
-        }
-            </style>
 
 
   </head>
@@ -155,33 +89,12 @@
 
   <section class="section">
     <div class="container">
+      <h1 class="title">
+        Socials
+      </h1>
       <div class="content">
         
-<div class="wrapper">
-        <div class="normal-text"> I'm a: </div> 
-        <ul class="dynamic-text">
-            <li>Developer.</li>
-            <li>Crazy Lady.</li>
-            <li>🏳️‍⚧️Transwoman.</li>
-        </ul>
-    </div>
 
-    <script>
-        const menuToggle = document.querySelector('.menuToggle');
-        const navigation = document.querySelector('.navigation');
-        menuToggle.onclick = function(){
-            navigation.classList.toggle('open')
-        }
-
-        const list = document.querySelectorALl('.list');
-        function activeLink(){
-            list.forEach((item) =>
-            item.classList.remove('active'));
-            this.classList.add('active');
-        }
-        list.forEach((item) =>
-        item.addEventListener('click',activeLink))
-    </script>
 
        
         <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
@@ -193,6 +106,14 @@
     'floating-chat.donateButton.text-color': '#fff'
   });
 </script>
+<br><br><br>
+<a href="https://bulma.io">
+  <img
+    src="https://bulma.io/images/made-with-bulma.png"
+    alt="Made with Bulma"
+    width="128"
+    height="24">
+</a>
         </div>
     </div>
   </section>
