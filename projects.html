@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "icon" href = "assets/branding/obo-icon.png">
+    <title>LimePot - About</title>
+    <link rel="stylesheet" href="mybulma/css/mystyles.css">
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            font-size: 4vw;
+            width: 50vw;
+            text-align: center;
+            display: flex;
+            
+        }
+        .normal-text{
+            color: white;
+            width: 35%;
+            display: inline-block;
+            text-align: left;
+        }
+        .dynamic-text {
+            display: inline-block;
+            height: 5vw;
+            overflow: hidden;
+        }
+        .dynamic-text li{
+            color: rgb(0, 255, 204);
+            margin: 0 0 2% 5px;
+            position: relative;
+            width: fit-content;
+            animation: slid 18s steps(3) infinite;
+            -webkit-animation: slid 18s steps(3) infinite;
+        }
+        .dynamic-text li::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-left: 2px solid rgb(0, 255, 204);
+            left: 0;
+            background: #332e33;
+            animation: typing 3s steps(12) infinite;
+            -webkit-animation: typing 3s steps(12) infinite;
+        }
+        @keyframes typing {
+            50%{left:100%}
+            100%{left:0%}
+        }
+        @keyframes slid {
+           
+             50%{
+                 transform: translateY(calc(-15.5vw));
+                 -webkit-transform: translateY(calc(-15.5vw));
+                 -moz-transform: translateY(calc(-15.5vw));
+                 -ms-transform: translateY(calc(-15.5vw));
+                 -o-transform: translateY(calc(-15.5vw));
+        }
+             100%{ transform: translateY(0px);
+                 -webkit-transform: translateY(0px);
+                  -moz-transform: translateY(0px); 
+                  -ms-transform: translateY(0px); 
+                  -o-transform: translateY(0px);}
+        }
+            </style>
+
+
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://limepot.xyz/">
+            <img src="assets/obo-icon.png">
+            LimePot
+          </a>
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="https://limepot.xyz/">
+              Home
+            </a>
+      
+            <a class="navbar-item" href="https://limepot.xyz/about">
+              About
+            </a>
+            <a class="navbar-item" href="https://limepot.xyz/blog">
+              Blog
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="https://limepot.xyz/projects">
+                Projects
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="https://github.com/LimePotato">
+                    Github
+                </a>
+                <a class="navbar-item" href="https://limepot.xyz/photography">
+                    Photography
+                  </a>
+                  <a class="navbar-item" href="https://limepot.xyz/videography">
+                    Youtube
+                  </a>
+                </div>
+            </div>
+            
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="https://limepot.xyz/Socials">
+                    Socials
+                  </a>
+                  <hr class="navbar-divider">
+                <a class="navbar-item" href="https://limepot.xyz/Contact">
+                  Contact
+                </a>
+                <a class="navbar-item" href="https://limepot.xyz/old">
+                    Old Site
+                  </a>
+                  <a class="navbar-item" href="https://limepot.xyz/ALPHA">
+                    Alpha Site
+                  </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        
+       
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('limepot', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support Me',
+    'floating-chat.donateButton.background-color': '#00bfa5',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+        </div>
+    </div>
+  </section>
+  </body>
+</html>
